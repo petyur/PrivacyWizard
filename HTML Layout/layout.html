@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+
+<script>
+
+function my_log(ob)
+{
+	//console.log(ob);
+}
+
+function init()
+{
+	var bodyWidth = document.body.offsetWidth/600;
+	var logoTxtSize = document.getElementById("logo_text").style.fontSize; 
+	var bodyHeight = document.body.offsetHeight/800;
+
+	if (bodyWidth <= bodyHeight)
+		{
+			if (bodyWidth < 20)
+				{
+					logoTxtSize = 20 + "px";
+				}
+			else if (bodyWidth >= 60)
+				{
+				logoTxtSize = bodyWidth*60 + "px";
+				}
+		}
+ 	my_log("offsetWidth " +	document.body.offsetWidth);
+	my_log("font size = " +	document.body.offsetWidth/800*60);
+	
+}
+
+</script>
+
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="appstyles.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+</style>
+</head>
+
+<body onLoad="init();" onResize="init();">
+    
+	<header>
+    
+	  <div align="center">
+        	<div class="logo"><img src="hat2k.gif" class="hat" alt="security wizard" style="max-height:18%; max-width:18%; min-width:128px; min-height:128px;"/>
+   	   <p><div id = "logo_text" > Security Wizard </div> </p> </div>
+      </div>
+        
+    </header>
+    
+
+
+<div align="center" id="buttons">
+    
+	<div onclick="location.href='runtest.html';" style="cursor:pointer;" class="button" id="button"><p> Run Test </p></div>
+	<div> </div>
+    <div onclick="location.href='compare.html';" style="cursor:pointer;" class="button" id="btnsize"><p> Compare </p></div>
+
+
+	<div onclick="location.href='history.html';" style="cursor:pointer;" class="button" id="btnsize"><p> History </p></div>
+
+
+	<div onclick="location.href='faq.html';" style="cursor:pointer;" class="button" id="btnsize"><p> FAQ </p></div>
+
+</div>
+
+</body>
+</html>
