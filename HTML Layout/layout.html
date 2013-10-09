@@ -2,70 +2,66 @@
 <html>
 <head>
 
-<script>
-
-function my_log(ob)
-{
-	//console.log(ob);
-}
-
-function init()
-{
-	var bodyWidth = document.body.offsetWidth/600;
-	var logoTxtSize = document.getElementById("logo_text").style.fontSize; 
-	var bodyHeight = document.body.offsetHeight/800;
-
-	if (bodyWidth <= bodyHeight)
-		{
-			if (bodyWidth < 20)
-				{
-					logoTxtSize = 20 + "px";
-				}
-			else if (bodyWidth >= 60)
-				{
-				logoTxtSize = bodyWidth*60 + "px";
-				}
-		}
- 	my_log("offsetWidth " +	document.body.offsetWidth);
-	my_log("font size = " +	document.body.offsetWidth/800*60);
-	
-}
-
-</script>
-
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Security Wizard - Main Page</title>
 <link href="appstyles.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 </style>
 </head>
 
-<body onLoad="init();" onResize="init();">
+<body height="800px">
     
 	<header>
-    
-	  <div align="center">
-        	<div class="logo"><img src="hat2k.gif" class="hat" alt="security wizard" style="max-height:18%; max-width:18%; min-width:128px; min-height:128px;"/>
-   	   <p><div id = "logo_text" > Security Wizard </div> </p> </div>
-      </div>
+    	<table width="100%">
+        	<tr>
+            	<td width="15%" height="2"></td><td></td><td width="15%"></td></tr>
+            <tr>
+        		<td></td><td><div class="logo"><p align="middle"><img src="hat2k.gif" class="hat" align="top" alt="security wizard" id="hat" style="height:96px; width:96px; align:left;"/> Security Wizard </p></div></td><td></td></tr>
+       		<tr>
+            	<td></td><td></td><td></td></tr>
+		</table>
         
     </header>
     
+<div >
 
+	<table width="100%" class="buttons">
 
-<div align="center" id="buttons">
-    
-	<div onclick="location.href='runtest.html';" style="cursor:pointer;" class="button" id="button"><p> Run Test </p></div>
-	<div> </div>
-    <div onclick="location.href='compare.html';" style="cursor:pointer;" class="button" id="btnsize"><p> Compare </p></div>
+    	<div class="spaces" id="spaces"><tr>
+			<td width="25%"><p></p></td><td></td><td width="25%"></td></tr></div>
+        <tr>
+            <td></td><td><div onclick="location.href='runtest.html';" style="cursor:pointer;" class="button" id="button"><p> Run Test </p></div></td><td></td></tr>
+		<div class="spaces" id="spaces"><tr>
+        	<td><p></p></td><td></td><td></td></tr></div>
+        <tr>
+    		<td></td><td><div onclick="location.href='compare.html';" style="cursor:pointer;" class="button" id="btnsize"><p> Compare </p></div></td><td></td></tr>
+        
+        <div class="spaces" id="spaces"><tr>
+        	<td><p></p></td><td></td><td></td></tr></div>
+        
+        <tr>
+	  		<td height="53"></td><td><div onclick="location.href='history.html';" style="cursor:pointer;" class="button" id="btnsize"><p> History </p></div></td><td></td></tr>
+		
+        <div class="spaces" id="spaces"><tr>
+        	<td><p></p></td><td></td><td></td></tr></div>
+        
+        <tr>
+			<td></td><td><div onclick="location.href='faq.html';" style="cursor:pointer;" class="button" id="btnsize"><p> FAQ </p></div></td><td></td></tr>
+        
+        <div class="spaces" id="spaces"><tr>
+        	<td><p></p></td><td></td><td></td></tr></div>
 
+	</table>
 
-	<div onclick="location.href='history.html';" style="cursor:pointer;" class="button" id="btnsize"><p> History </p></div>
-
-
-	<div onclick="location.href='faq.html';" style="cursor:pointer;" class="button" id="btnsize"><p> FAQ </p></div>
-
-</div>
-
+<footer>
+	<table width="100%">
+    	<tr>
+        	<td width="5%"></td><td></td><td width="5%"></td></tr>
+       	<tr>
+        	<td></td><td>&copy; Petr Yurchenko @ vitco.com</td><td></td></tr>
+		<tr>
+        	<td></td><td></td><td></td></tr>
+	</table>
+</footer>
 </body>
 </html>
