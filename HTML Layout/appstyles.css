@@ -50,8 +50,8 @@ body
 	font-size: 40px;
 	height: 70px;
 	text-align: center;
-	-webkit-box-shadow: 1px 1px 10px 1px #123860;
-	box-shadow: 1px 1px 10px 1px #123860;
+	-webkit-box-shadow: 1px 1px 17px 2px #333333;
+	box-shadow: 1px 1px 17px 2px #333333;
 }
 
 .spaces
